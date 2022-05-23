@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "298c7303-f9b0-42ad-b717-f1d8dbb00ab6",
+		"name": "pub db",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20326909"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/saveBeer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Borsodi\",\r\n    \"alcPercent\": 4.5,\r\n    \"atStock\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/saveBeer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveBeer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/saveSpirit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jaeger\",\r\n    \"alcPercent\": 39,\r\n    \"atStock\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/saveSpirit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveSpirit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/saveWineOrigin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Tokaj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/saveWineOrigin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveWineOrigin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/saveWine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Aszú\",\r\n    \"alcPercent\": 12.5,\r\n    \"atStock\": 4,\r\n    \"originId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/saveWine",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveWine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getAllBeer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllBeer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllBeer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getAllWine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllWine",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllWine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getAllSpirit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllSpirit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllSpirit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getAllWineOrigin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllWineOrigin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllWineOrigin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getWineById?id=3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getWineById?id=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getWineById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getSpiritById?id=2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getSpiritById?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getSpiritById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/updateBeer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Soproni\",\r\n    \"alcPercent\": 4.2,\r\n    \"atStock\":7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateBeer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateBeer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/updateWine",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Hétputtonyos\",\r\n    \"alcPercent\": 12.5,\r\n    \"atStock\": 4,\r\n    \"originId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateWine",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateWine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/updateSpirit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"name\": \"Unicum\",\r\n        \"alcPercent\": 39.0,\r\n        \"atStock\": 4\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateSpirit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateSpirit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/updateWineOrigin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Eger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateWineOrigin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateWineOrigin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/deleteBeer?id=1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteBeer?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteBeer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/deleteWine?id=3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteWine?id=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteWine"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/deleteSpirit?id=2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteSpirit?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteSpirit"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/deleteWineOrigin?id=1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteWineOrigin?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteWineOrigin"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
