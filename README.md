@@ -3,6 +3,10 @@ database for a fictional pub
 
 postman archive parancsok a fájlok között
 
+
+
+
+
 Postman commands:
 
 -POST
