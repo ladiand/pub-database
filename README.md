@@ -1,7 +1,7 @@
 # pub-database
 database for a fictional pub
 
-postman archive feltölrés alatt
+postman archive parancsok a fájlok között
 
 Postman commands:
 
